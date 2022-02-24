@@ -120,7 +120,7 @@ namespace ProductManagment
                 cmd.Parameters.Add("@Price", SqlDbType.Int).Value = p.Price;
                 cmd.Parameters.Add("@Quantity", SqlDbType.Int).Value = p.Quantity;
                 cmd.Parameters.Add("@Discontinued", SqlDbType.NVarChar).Value = p.Discontinued;
-                cmd.Parameters.Add("@CreateDate", SqlDbType.NVarChar).Value = p.CreateDate;
+                cmd.Parameters.Add("@CreateDate", SqlDbType.Date).Value = p.CreateDate;
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
